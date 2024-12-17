@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .logo-container {
+            margin-top: 100px;
+        }
+
+        .logo-container img {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .signup-container {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            margin: 2rem auto;
+        }
+
+        h1 {
+            color: #2a9d8f;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            background-color: #2a9d8f;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #21867a;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <h1>Welcome to Our Travel Site</h1>
+        <p>Click here to sign up</p>
+        <img src="https://www.shutterstock.com/shutterstock/photos/1833071854/display_1500/stock-vector-online-sign-up-click-on-the-registration-button-and-lead-conversion-process-hand-pushing-the-cta-1833071854.jpg" alt="Sign Up Logo" id="signupLogo">
+    </div>
+
+    <div class="signup-container" id="signupContainer">
+        <h1>Sign Up</h1>
+        <form id="signupForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="number" placeholder="Enter your phone number" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+        const signupLogo = document.getElementById('signupLogo');
+        const signupContainer = document.getElementById('signupContainer');
+
+        // Show the sign-up form when the logo is clicked
+        signupLogo.addEventListener('click', function() {
+            signupContainer.style.display = 'block';
+            window.scrollTo({ top: signupContainer.offsetTop, behavior: 'smooth' });
+        });
+
+        // Handle form submission
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const number = document.getElementById('number').value;
+
+            if (name && number) {
+                alert(`Thank you for signing up, ${name}!`);
+                window.location.href = 'index.html'; // Redirect to the homepage
+            } else {
+                alert('Please fill in all the fields.');
+            }
+        });
+    </script>
+</body>
+</html>

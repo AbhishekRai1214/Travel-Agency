@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #f4a261;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #264653;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .package {
+            margin: 2rem auto;
+            max-width: 400px;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .package img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .package h2 {
+            margin-top: 1rem;
+        }
+
+        .package ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .package ul li {
+            background: #e9f5f5;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .booking-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #2a9d8f;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .booking-button:hover {
+            background: #21867a;
+        }
+
+        footer {
+            text-align: center;
+            background: #2a9d8f;
+            color: white;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Our Tour Packages</h1>
+    </header>
+
+    <nav>
+        <a href="#varanasi">Varanasi</a>
+        <a href="#bali">Bali</a>
+        <a href="#france">France</a>
+        <a href="#rajasthan">Rajasthan</a>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <main>
+        <section id="varanasi" class="package">
+            <img src="https://media.istockphoto.com/id/827065008/photo/holy-town-varanasi-and-the-river-ganges.jpg?s=612x612&w=0&k=20&c=WHGBF2zwPkVMpAma832RbHrov6VwKIMXuDR3N2WmfGg=" alt="Varanasi Tour Package">
+            <h2>Varanasi, India</h2>
+            <p>Experience the spiritual essence of India with our exclusive Varanasi tour package.</p>
+            <ul>
+                <li>3 Nights, 4 Days stay at a premium riverside hotel</li>
+                <li>Guided tours to Kashi Vishwanath Temple and ghats</li>
+                <li>Boat ride on the Ganges at sunrise</li>
+                <li>Daily breakfast and dinner included</li>
+            </ul>
+            <a href="#" class="booking-button">Book Now</a>
+        </section>
+
+        <section id="bali" class="package">
+            <img src="https://media.istockphoto.com/id/1084026282/photo/traditional-balinese-dance-legong.jpg?s=612x612&w=0&k=20&c=DyKc-DW-CvALYpENlxz9m5CDp9LGdjj2nRl2VAIh03g=" alt="Bali Tour Package">
+            <h2>Bali, Indonesia</h2>
+            <p>Discover the tropical paradise with our tailor-made Bali tour package.</p>
+            <ul>
+                <li>5 Nights, 6 Days stay in luxury beachside villas</li>
+                <li>Full-day trips to Ubud and Tanah Lot</li>
+                <li>Balinese cultural performance and spa experience</li>
+                <li>Breakfast, lunch, and airport transfers included</li>
+            </ul>
+            <a href="#" class="booking-button">Book Now</a>
+        </section>
+
+        <section id="france" class="package">
+            <img src="https://media.istockphoto.com/id/135034702/photo/arc-de-triomphe-paris.jpg?s=612x612&w=0&k=20&c=u6urLcnQ6Jed_hW0AFdsilopskzpnL_uhbw1O7xkZaQ=" alt="France Tour Package">
+            <h2>France</h2>
+            <p>Immerse yourself in romance and culture with our France tour package.</p>
+            <ul>
+                <li>7 Nights, 8 Days stay in Paris and Provence</li>
+                <li>Guided Eiffel Tower and Louvre Museum tours</li>
+                <li>Wine tasting experience in Bordeaux</li>
+                <li>Daily breakfast and intercity train tickets included</li>
+            </ul>
+            <a href="#" class="booking-button">Book Now</a>
+        </section>
+
+        <section id="rajasthan" class="package">
+            <img src="https://media.istockphoto.com/id/143176490/photo/camel-drivers-in-the-desert.jpg?s=612x612&w=0&k=20&c=cLspGLDFz3dvxWOB61z5pM7bUR6J7PlMqdqrnKktTXI=" alt="Rajasthan Tour Package">
+            <h2>Rajasthan, India</h2>
+            <p>Experience royal grandeur with our Rajasthan tour package.</p>
+            <ul>
+                <li>6 Nights, 7 Days stay in Jaipur, Udaipur, and Jodhpur</li>
+                <li>Visits to Amer Fort, City Palace, and Mehrangarh Fort</li>
+                <li>Desert safari with a camel ride in Jaisalmer</li>
+                <li>Breakfast, dinner, and guided tours included</li>
+            </ul>
+            <a href="#" class="booking-button">Book Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tour Packages. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
